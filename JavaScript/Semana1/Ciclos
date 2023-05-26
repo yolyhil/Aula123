@@ -1,0 +1,51 @@
+
+// while
+Let contador = 0;
+while(contador < 3){
+    console.log(contador);
+    contador++;
+}
+console.log("fin del ciclo while");
+// aca comienza el video 2 de clase 1
+// do while
+Let conteo =0;
+do{
+    console.log("desarrollo de do while");
+    console.log(conteo);
+    conteo++;
+
+}while(conteo < 3);//fin del ciclo do while
+// aca comienza el video 3 de clase 1
+// For ciclo
+for(Let contando = 0;contando < 10 ; contando++){
+    console.log("trabaja el ciclo for");
+    console.log(contando);
+}
+console.log("final del ciclo for");
+//continue  video 5 clase 1
+for(Let contando = 0;contando < 10 ; contando++){
+   if ( contando % 2 !== 0 ) {
+    console.log("es un numero par");
+    console.log(contando);
+    continue;// va a la siguiente iteracion
+   } 
+}
+console.log("final del ciclo for");
+inicio:
+// Etiquetas labels video 6 clase 1
+for(Let contando = 0; contando < 10 ; contando++){
+    if contando% 2 !==0){
+     console.log("es un numero par");
+     console.log(contando);
+     continue inicio;
+    } 
+ }
+ console.log("final del ciclo for");
+ // etiqueta o labels break
+ for(Let contando = 0 ; contando <= 10; contando++ ) {
+    if (contando% 2 !==0){
+     break inicio; // ir a la siguiente iteracion
+    } 
+    console.log(contando);
+ }
+ console.log("final del ciclo for");
