@@ -1,0 +1,111 @@
+
+from NumerosIgualesException import NumerosIgualesException
+resultado = None
+try:
+    a = int(input("ingrese un valor : "))
+    b = int(input("ingrese un 2 valor "))
+    if a == b:
+       raise NumerosIgualesException("son numeros iguales")
+    resultado = a/b # modificamos
+except TypeError as e:
+    print(f'TypeError - ocurrio un error:{type(e)}')
+except ZeroDivisionError as e:
+    print(f'ZeroDivisionError - ocurrio un error {type(e)} ')
+    print(f' el resultado es : {resultado}')
+    print('seguimos')
+except Exception as e:
+    print(f'Exception - ocurrio un error {type(e)} ')
+else:
+    print(f'no se arrojo ninguna excepcion ')
+finally: # siempre se va ejecutar
+    print('ejecucion de este bloque finally ')
+print(f" el resultado es: {resultado} ")
+print(f" seguimos ")
+
+
+
+
+
+# video 6 de la clase 1 03/04/23
+"""resultado = None
+try:
+    a = int(input("ingrese un valor : "))
+    b = int(input("ingrese un 2 valor "))
+    resultado = a/b # modificamos
+except TypeError as e:
+    print(f'TypeError - ocurrio un error:{type(e)}')
+except ZeroDivisionError as e:
+    print(f'ZeroDivisionError - ocurrio un error {type(e)} ')
+    print(f' el resultado es : {resultado}')
+    print('seguimos')
+except Exception as e:
+    print(f'Exception - ocurrio un error {type(e)} ')
+else:
+    print(f'no se arrojo ninguna excepcion ')
+finally:# siempre se va ejecutar
+    print('ejecucion de este bloque finally ')
+print(f" el resultado es: {resultado} ")
+print(f" seguimos ")"""
+
+
+# video 5 de la primer clase
+"""resultado = None
+try:
+    a = int(input("ingrese un valor entero positivo: "))
+    b = int(input(" ingrese un 2 valor positivo: "))
+    resultado = a/b # modificamos
+except TypeError as e:
+    print(f'TypeError - ocurrio un error:{type(e)}')
+except ZeroDivisionError as e:
+    print(f'ZeroDivisionError - ocurrio un error {type(e)} ')
+    print('seguimos')
+except Exception as e:
+    print(f'Exception - ocurrio un error {type(e)} ')
+print(f' el resultado es : {resultado}')
+print('seguimos')"""
+
+
+"""resultado = None# video 4 clase 1 -03/04/23
+a = 10
+b = 0
+try:
+   resultado = a/b # modificamos
+except TypeError as e:
+    print(f'TypeError - ocurrio un error:{type(e)}')
+except ZeroDivisionError as e:
+    print(f'ZeroDivisionError - ocurrio un error {type(e)} ')
+    print(f' el resultado es : {resultado}')
+    print('seguimos')
+except Exception as e:
+    print(f'Exception - ocurrio un error {type(e)} ')
+    print(f' el resultado es : {resultado}')
+    print('seguimos') """
+
+"""resultado = None
+a = "10"
+b = 0
+try:# video 3
+   resultado = a/b # modificamos
+except ZeroDivisionError as e:
+    print(f'ocurrio un error {e} ')
+    print(f' el resultado es : {resultado}')
+    print('seguimos')"""
+
+"""resultado = None // es comveniente siempre usar la clase padre
+a = 10
+b = 0
+try:
+   resultado = a/b # modificamos
+except Exception as e:
+    print(f'ocurrio un error {e} ')
+    print(f' el resultado es : {resultado}')
+    print('seguimos')
+try:
+    10/0
+except Exception as e: esta clase padre debe ir al final para
+    print(f'ocurrio un error {e} ')try exception"""
+
+"""try:
+    10/2
+except ZeroDivisionError as e:
+    print(f'ocurrio un error {e} ')"""
